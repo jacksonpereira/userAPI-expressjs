@@ -3,6 +3,7 @@ const app = require("express")();
 app.use(require("cors")());
 
 app.get("/users", (req, res) => {
+  console.log("users");
   return res.status(200).json({
     users: [
       { name: "Jackson Pereira da Silva" },
